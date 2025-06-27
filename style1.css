@@ -1,0 +1,134 @@
+body {
+  font-family: 'Comic Sans MS', cursive;
+  background: linear-gradient(to bottom right, #ffe0ec, #fcd1ff);
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+
+.game-container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #e91e63;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.card {
+  background-color: #fff;
+  border: 2px solid #ff69b4;
+  border-radius: 10px;
+  width: 100px;
+  height: 140px;
+  margin: 10px;
+  font-size: 40px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff69b4;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #e9559e;
+}
+
+.love-message {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeInUp 1s ease;
+}
+
+.rohan {
+  color: #ff2e63;
+  font-weight: bold;
+  animation: heartbeat 1.5s infinite;
+}
+
+.extra-message {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.extra-message a {
+  color: #e91e63;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.extra-message a:hover {
+  text-decoration: underline;
+}
+
+.response-message {
+  font-size: 24px;
+  color: #ff2e63;
+  font-weight: bold;
+  margin: 15px 0;
+  animation: fadeInUp 0.5s ease;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}

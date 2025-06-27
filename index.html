@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> WEbsite </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">  
+            <p>HELLO</p>
+            <p>MATE</p>
+      </div>
+            <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+<div class="main-container">
+    <p id="typed"></p>
+    <a class="love-link"
+    href="game.html">Wanna know who lives in your heart rent-free? Click here</a>
+</div>
+    <script>
+        let text = "Welcome to My Awesome Website! ";
+        let i =0;
+        function typing(){
+            if(i<text.length){
+                document.getElementById("typed").innerHTML +=text.charAt(i);
+                i++;
+                setTimeout(typing,100);
+            }
+        }
+        typing();
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Who Do You Love?</title>
+  <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>💘 Who Do You Love? 💘</h1>
+    <div id="round-info">Choose a card</div>
+
+    <div class="cards" id="cards-container"></div>
+
+    <div id="result" class="hidden">
+      <h2 id="final-message" class="love-message"></h2>
+
+      <p id="extra-link" class="extra-message hidden">
+        💌 <a href="#" onclick="showLoveBack()">Want to know if Rohan loves you too? Click here!</a>
+      </p>
+
+      <div id="love-back" class="hidden response-message">
+        💋Rohan missed the love train, skipped your heart,but locked onto your hips and curves like GPS -- and that body? Got a full yes from his eyes and hands😘🔥;
+      </div>
+
+      <button onclick="restartGame()">Play Again</button>
+    </div>
+  </div>
+ <a href="index.html" class="back-link">← Back to Home Page</a>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+background: url(images/religion.jpg) no-repeat center center fixed;
+   background-size: cover;
+   font-family: 'Courier New', Courier, monospace;
+   min-height: 100vh;
+   color:#00ffcc;
+
+}
+
+.navbar{
+    background-color: rgba(o,0,0, 0.75);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position:fixed ;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(6px);
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+.logo p{
+    font-size:1.2rem;
+    font-weight: bold;
+    color: #00ffcc;
+    
+}
+.nav-links a{
+    margin-left: 25px;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: 0.3s;
+    position: relative;
+}
+.nav-links a::after{
+    content:'';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #00ffcc;
+    left: 0;
+    bottom:-4px;
+    transition:width 0.3s ease;
+
+}
+
+.nav-links a:hover::after{
+    width:100%;
+
+}
+
+.main-container{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+text-align: center;
+padding-top:80px;
+}
+
+#typed{
+font-size: 4rem;
+white-space: nowrap;
+overflow: hidden;
+border-right: 3px solid #00ffcc;
+animation: binkCursor 0.7s step-end infinite;
+background-color: rgba(o,0,0, 0.6);
+padding: 10px 20px;
+padding:10px 20px;
+border-radius: 10px;
+margin-bottom: 20px;
+}
+
+.love-link{
+    color:#ffffff;
+    background-color: rgba(o,0,0, 0.5);
+    padding:10px 20px;
+    border-radius:20px ;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.3s ease;
+}
+.love-link:hover{
+    background-color:rgba(0,0,0,0.8);
+    color:#00ffcc;
+
+}
+@keyframes blinkCursor{
+    from { border-right-color: #00ffcc;}
+    to{border-right-color: transparent;}
+}
+@media screen and (max-width: 600px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #ffb6c1;
+  }
+
+  .logo {
+    flex: 0 0 auto;
+    text-align: left;
+  }
+
+  .logo p {
+    font-size: 16px;
+    margin: 0;
+    font-weight: bold;
+    color: #e91e63;
+    line-height: 1.2;
+  }
+
+  .nav-links {
+    flex: 0 0 auto;
+    display: flex;
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    padding: 6px 10px;
+    background-color: #e91e63;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  .main-container {
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  #typed {
+    font-size: 20px;
+    color: #e91e63;
+    padding: 0 10px;
+  }
+
+  .love-link a {
+    font-size: 15px;
+    margin-top: 15px;
+    color: #d81b60;
+    display: inline-block;
+    text-decoration: none;
+  }
+}
